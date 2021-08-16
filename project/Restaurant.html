@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>레스토랑</title>
+		<meta name="description" content="Add a description" />
+		<meta name="keywords" content="Add keywords" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<style>
+		body{
+			margin:0;
+		}
+		#restaurant{
+			height:auto;
+			width:100%;
+		}
+		#left{
+			width:3%;
+			height:auto;
+			transform:rotate(270deg);
+			position:absolute;
+			bottom:43%;
+			left:2%;
+		}
+		#right{
+			width:3%;
+			height:auto;
+			transform:rotate(90deg);
+			position:absolute;
+			bottom:43%;
+			right:2%;
+		}
+		.modal_wrap{
+        display: none;
+        width: 500px;
+        height: 500px;
+        position: absolute;
+        top:50%;
+        left: 50%;
+        margin: -250px 0 0 -250px;
+        background:#eee;
+        z-index: 2;
+    }
+    .black_bg{
+        display: none;
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color:rgba(0, 0,0, 0.5);
+        top:0;
+        left: 0;
+        z-index: 1;
+    }
+    .modal_close{
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: -30px;
+        right: 0;
+    }
+    .modal_close> a{
+        display: block;
+        width: 100%;
+        height: 100%;
+        background:url(https://img.icons8.com/metro/26/000000/close-window.png);
+        text-indent: -9999px;
+    }
+		button{
+			position: absolute;
+			width: 179px;
+			height: 121px;
+			top:224px;
+			left:693px;
+			opacity: 0;
+		}
+		iframe{
+			width:100%;
+			height: 100%;
+			border:none;
+		}
+		</style>
+	</head>
+	<body>
+	<img src="restaurant.png" alt="restaurant" id="restaurant" usemap="#res" />
+	<img onclick="javascript:location.href='Wall.html';" style="cursor:pointer" src="foot.png" alt="left" id="left"/>
+	<img onclick="javascript:location.href='Hotel.html';" style="cursor:pointer" src="foot.png" alt="right" id="right"/>
+	<map name="res">
+		<area shape="rect" style="cursor:pointer" coords="693,224,872,345" class="res_img">
+		<area shape="rect" style="cursor:pointer" coords="738,424,830,452" id="res_ingre">
+		<area shape="rect" style="cursor:pointer" coords="720,456,733,474" id="res_cup_left">
+		<area shape="rect" style="cursor:pointer" coords="829,458,842,474" id="res_cup_right">
+	</map>
+	<button type='button' id="modal_btn"></button>
+<div class="black_bg"></div>
+<div class="modal_wrap">
+    <div class="modal_close"><a href="#">close</a></div>
+    <div>
+
+				<iframe src="numfive_dial.html" style="display:block; width:32.7vw; height:33vw;"></iframe>
+
+    </div>
+<div>
+
+	<script>
+	window.onload = function() {
+
+    function onClick() {
+        document.querySelector('.modal_wrap').style.display ='block';
+        document.querySelector('.black_bg').style.display ='block';
+    }
+    function offClick() {
+        document.querySelector('.modal_wrap').style.display ='none';
+        document.querySelector('.black_bg').style.display ='none';
+    }
+
+    document.getElementById('modal_btn').addEventListener('click', onClick);
+    document.querySelector('.modal_close').addEventListener('click', offClick);
+
+};
+	</script>
+	</body>
+</html>
