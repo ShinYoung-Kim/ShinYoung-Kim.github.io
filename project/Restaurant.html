@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>레스토랑</title>
+		<meta name="description" content="Add a description" />
+		<meta name="keywords" content="Add keywords" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<style>
+		body{
+			margin:0;
+		}
+		#restaurant{
+			height:auto;
+			width:100%;
+		}
+		#left{
+			width:3%;
+			height:auto;
+			transform:rotate(270deg);
+			position:absolute;
+			bottom:43%;
+			left:2%;
+		}
+		#right{
+			width:3%;
+			height:auto;
+			transform:rotate(90deg);
+			position:absolute;
+			bottom:43%;
+			right:2%;
+		}
+		</style>
+	</head>
+	<body>
+	<img src="restaurant.png" alt="restaurant" id="restaurant" usemap="#res"/>
+	<img onclick="javascript:location.href='Wall.html';" style="cursor:pointer" src="foot.png" alt="left" id="left"/>
+	<img onclick="javascript:location.href='Hotel.html';" style="cursor:pointer" src="foot.png" alt="right" id="right"/>
+	<map name="res">
+		<area shape="rect" style="cursor:pointer" coords="693,224,872,345" id="res_img">
+		<area shape="rect" style="cursor:pointer" coords="738,424,830,452" id="res_ingre">
+		<area shape="rect" style="cursor:pointer" coords="720,456,733,474" id="res_cup_left">
+		<area shape="rect" style="cursor:pointer" coords="829,458,842,474" id="res_cup_right">
+	</map>
+	<script>
+	</script>
+	</body>
+</html>
