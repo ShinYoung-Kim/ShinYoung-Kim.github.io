@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Design Thinking</title>
+<style>
+.preloader {
+display:inline;
+z-index: 2000;
+position: fixed;
+top: 0;
+right: 0;
+bottom: 0;
+left: 0;
+background-color: white;
+transition: opacity .65s ease;
+}
+.loading-bar {
+width: 12%;
+height: 4px;
+background-color: #000;
+transition: width 1000ms cubic-bezier(.25, 0, 0, 1);
+}
+</style>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+  	requestAnimationFrame(function() {
+			document.getElementById("loadingBar").style.width = "100%";
+      });
+    });
+</script>
+</head>
+<body>
+  <script>
+window.onload = function () {
+document.getElementById("loadingIndicator").style.opacity = "0";
+setTimeout(function() {
+    document.getElementById("loadingIndicator").style.display = "none";}, 450);
+}
+</script>
+
+<div id="loadingIndicator" class="preloader">
+     <div id="loadingBar" class="loading-bar"></div>
+</div>
+</body>
+<script>
+</script>
+</html>
