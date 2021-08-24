@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>여자의 방</title>
+		<meta name="description" content="Add a description" />
+		<meta name="keywords" content="Add keywords" />
+		<meta name="author" content="Codrops" />
+		<link rel="shortcut icon" href="../favicon.ico">
+		<link rel="stylesheet" type="text/css" href="css/default.css" />
+		<link rel="stylesheet" type="text/css" href="css/component2.css" />
+		<script src="js/modernizr.custom.js"></script>
+		<style>
+		body{
+			margin: 0;
+		  height: 100vh;
+		  background-image: url("woman.png");
+		  background-repeat: no-repeat;
+		  background-position: center;
+		  background-size: cover;
+		  background: url("woman.png") no-repeat center/cover;
+			overflow: hidden;
+		}
+
+		#left{
+			width:3%;
+			height:auto;
+			transform:rotate(270deg);
+			position:absolute;
+			bottom:43%;
+			left:2%;
+		}
+		#right{
+			width:3%;
+			height:auto;
+			transform:rotate(90deg);
+			position:absolute;
+			bottom:43%;
+			right:2%;
+		}
+		</style>
+	</head>
+	<script>
+	function openhint4(){
+				window.open("hint4.html", "hint2", "toolbar=no, menubar=no, scrollbars=no, resizable=no, max-height=100%, width=auto, left=0, top=0" );
+		}
+	function openhint5(){
+				 window.open("hint5.html", "hint3", "toolbar=no, menubar=no, scrollbars=no, resizable=no, max-height=100%, width=auto, left=0, top=0");
+		}
+		function openlock4(){
+					 window.open("letterthree_dial.html", "letterthree", "toolbar=no, menubar=no, scrollbars=no, resizable=no, width=500, height=600, left=0, top=0" );
+			}
+			function openlock5(){
+						 window.open("letterfour_dial.html", "letterfour", "toolbar=no, menubar=no, scrollbars=no, resizable=no, width=500, height=600, left=0, top=0" );
+				}
+				function openline3(){
+							 window.open("line3.html", "line3", "toolbar=no, menubar=no, scrollbars=no, resizable=no, width=900, height=400, left=0, top=0" );
+					}
+					function openline4(){
+								 window.open("line4.html", "line4", "toolbar=no, menubar=no, scrollbars=no, resizable=no, width=900, height=1500, left=0, top=0" );
+						}
+	</script>
+	<body>
+	<img src="woman.png" alt="woman" id="woman" usemap="#call" usemap="#call" />
+	<img onclick="javascript:location.href='Hotel.html';" style="cursor:pointer" src="foot.png" alt="left" id="left"/>
+	<img onclick="javascript:location.href='Wall.html';" style="cursor:pointer" src="foot.png" alt="right" id="right"/>
+<iframe src="button-21.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
+
+	<!--영역 설정-->
+	<map name="call">
+		<a href="#none" onclick="openlock4()">
+		<area shape="rect" style="cursor:pointer" coords="810,447,940,558" class="closet_s">
+	</a>
+		<a href="#none" onclick="openhint4()">
+		<area shape="rect" style="cursor:pointer" coords="636,466,796,583" id="tv">
+	</a>
+	<a href="#none" onclick="openlock5()">
+	<area shape="rect" style="cursor:pointer" coords="1145,364,1263,573" class="closet_l">
+	</a>
+		<a href="#none" onclick="openhint5()">
+		<area shape="rect" style="cursor:pointer" coords="1136,302,1231,357" id="radio">
+	</a>
+	<a href="#none" onclick="openline5()">
+		<area shape="rect" style="cursor:pointer" coords="" id="table">
+	</a>
+	<a href="#none" onclick="openline6()">
+		<area shape="rect" style="cursor:pointer" coords="" id="black_picture">
+	</a>
+	</map>
+
+	</body>
+</html>
