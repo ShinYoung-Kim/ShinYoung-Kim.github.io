@@ -1,0 +1,47 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>hint1</title>
+<style>
+body{
+  margin: 0;
+  height: 100vh;
+}
+.btn-close{
+  position:absolute;
+  cursor:pointer;
+  border: 1px solid;
+  border-color:#932a2a;
+  color:white;
+  background-color:#932a2a;
+
+  padding:5px;
+  top:90%;
+  left:50%;
+  transform: translate(-50%, 90%);
+}
+.btn-close:hover{
+  background-color:white;
+  color:#932a2a;
+}
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  /* Preserve aspet ratio */
+  min-height: 100%;
+  height: 500px;
+  margin-left: 15%;
+}
+</style>
+</head>
+<body>
+  <img src="line14.png" id="bg"/>
+  <input type="button" value="호텔로 돌아가기" class="btn-close" onclick="self.close();" />
+  <script>
+
+  </script>
+</body>
+</html>
