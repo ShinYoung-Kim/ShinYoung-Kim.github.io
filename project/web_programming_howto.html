@@ -1,0 +1,351 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>게임 방법</title>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css'><link rel="stylesheet" href="gallery.css">
+<style>
+body{
+  margin: 0;
+  background-image: url("wallpaper.jpg");
+  padding-bottom: 30px;
+}
+.logo{
+  background-color: #900000;
+}
+.bg{
+  background-color:rgba(0, 0, 0, 0.7);
+  width:100%;
+  height:100%;
+  position: absolute;
+  display:block;
+  z-index: 1;
+}
+#logointro{
+  diplay:block;
+  width:30%;
+  height: auto;
+  bottom:58%;
+  position:absolute;
+}
+#logohowto{
+  diplay:block;
+  width:30%;
+  height: auto;
+  left:35%;
+  bottom:58%;
+  position:absolute;
+  background-color: #900000;
+}
+#logostart{
+  diplay:block;
+  width:30%;
+  height: auto;
+  left:70%;
+  bottom:58%;
+  position:absolute;
+  background-color: #900000;
+}
+
+.underline {
+  line-height: 1.2;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+  font-size: 3em;
+  font-weight: 700;
+  background-image: linear-gradient(transparent calc(100% - 3px), #000 3px);
+  background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: background-size 0.8s;
+  color: #000;
+  cursor: pointer;
+}
+@media (min-width: 1000px) {
+  .underline {
+    font-size: 5em;
+  }
+}
+.underline.yellow {
+  background-image: linear-gradient(transparent 60%, #F8CD07 40%);
+}
+.underline:hover {
+  background-size: 100% 100%;
+}
+.yellow{
+  background-color: #900000;
+}
+.slider .indicators .indicator-item {
+  background-color: #666666;
+  border: 3px solid #ffffff;
+  -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  -moz-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.slider .indicators .indicator-item.active {
+  background-color: #ffffff;
+}
+.slider {
+  width: 900px;
+  margin: 0 auto;
+}
+.slider .indicators {
+  bottom: 60px;
+  z-index: 100;
+  /* text-align: left; */
+}
+p{
+  color: #BF9000;
+}
+.logo1{
+  background-color: #900000;
+}
+.logo2{
+  background-color: #900000;
+}
+.logo3{
+  background-color: #900000;
+}
+.first{
+  text-shadow: 5px 4px 3px black;
+  text-align: center;
+}
+.second{
+  text-shadow: 5px 4px 3px black;
+  text-align: center;
+}
+.third{
+  text-shadow: 5px 4px 3px black;
+  text-align: center;
+}
+.fourth{
+  text-shadow: 5px 4px 3px black;
+  text-align: center;
+}
+#section {
+  width:1035px;
+  // 전체 아코디언 메뉴의 넓이 설정
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  }
+#section > div {
+    margin-bottom:150px;
+    }
+#section .section {
+      height:500px;
+      // 높이 설정
+      }
+#section .section .cont {
+        // 각각의 메뉴박스 기본값 설정
+        width:153px; height:600px;
+        overflow:hidden;
+        float:left;
+        position:relative;
+        border-left:solid 1px #f0ede7;
+         }
+#section .section .cont div:first-child {
+  border-left:none;
+  }
+#section .section .cont .bg {
+  position:absolute;
+  top:0;
+  left:0;
+  }
+#section .section .cont.on {
+  // 마우스 커서 올렸을 때 넓이 설정
+  width:413px;
+  }
+#section .section .cont.on .title_off {
+  display:none;
+}
+#section .section .cont.on .title_on {
+  display:block;
+  }
+#section .section .cont.on .layer {
+  // 마우스 커서 올렸을 때 커버 레이어 감추기
+  display:none
+  }
+#section .section .cont .title_off, #section .section .cont .title_on {
+  position:relative;
+  display:block;
+  width:153px;
+  text-align:center;
+  z-index:9999;
+  padding-top: 48%;
+  }
+  #section .section .cont .title_on {
+    width:413px;
+    display:none }
+  #section .section .cont .layer {
+    display:block;
+    width:413px;
+    height:600px;
+    position:absolute;
+    left:0;
+    top:0;
+    z-index:1;
+    background:#333333;
+    filter:alpha(opacity=90);
+    opacity:0.9; }
+table{
+  width:50%;
+  table-layout: fixed;
+}
+td{
+        width: 100px;
+        height: auto;
+      }
+.lo3{
+  width: 50%;
+  height: auto;
+}
+.l3{
+  text-align: center;
+}
+</style>
+</head>
+<body>
+  <center>
+  <div class ="logo">
+    <a href="web_programming_main.html"><img src="inthemoodforlovelogo.jpg" alt="logo"></a>
+    <section id="logointro" class="yellow underline">
+    <div class="logo1">
+      <a href="web_programming_howto.html">
+        <img src="howto.png" alt="intro" style="display:block" width="25%" height="auto" class="relative">
+      </a>
+    </div>
+    </section>
+    <section id="logohowto" class="yellow underline">
+        <div class="logo2">
+        <a href="Restaurant.html" target="_self"><img src="gamestart.png" alt="how_to" style="display:block" width="25%" height="auto" class="relative"></a>
+</div>
+    </section>
+    <section id="logostart" class="yellow underline">
+        <div class="logo3">
+        <a href="web_programming_explain.html">
+      <img src="start.png" alt="start" style="display:block" width="25%" height="auto" class="relative"></a>
+    </div>
+    </section>
+  </div>
+</center>
+<br/>
+<div class="first">
+<p>
+영화에서 중요한 장면으로 사용된 4가지 장소를 선정하여 재현해 보았습니다.</p>
+</div>
+<div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="restaurant.png"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>레스토랑</h3>
+          <h5 class="light grey-text text-lighten-3">영화 속에서 두 주인공이 식사를 하던 장소입니다.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="hotel.png"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>호텔</h3>
+          <h5 class="light grey-text text-lighten-3">영화 속에서 두 주인공이 만남을 가지던 장소입니다.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="woman.png"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>여성의 방</h3>
+          <h5 class="light grey-text text-lighten-3">영화 속에서 여자 주인공인 첸부인이 사는 장소입니다.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="wall.png"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>담벼락</h3>
+          <h5 class="light grey-text text-lighten-3">영화 속에서 두 주인공이 이별을 연습하던 장소입니다.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js'></script><script  src="gallery.js"></script>
+
+
+<div class="second">
+<p>각각의 방에서 특정 사물을 누르면 영화 속 대사나 장면뿐만 아니라 방탈출을 위한 자물쇠와 암호에 대한 힌트를 얻으실 수 있습니다.<br/>
+암호는 총 6개로, 레스토랑, 호텔, 여자의 방에서 5개의 자물쇠를 해제한 뒤 얻은 숫자들을 담벼락에서 얻은 자물쇠에 입력하면 방을 탈출이 가능합니다.</p>
+</div>
+<div id="section">
+  <div class="section">
+    <div class="cont on">
+      <span class="bg"><img src="lock1.jpg" width="600px" height="auto"/></span>
+      <!-- <span class="title_off"><img src="img/cont_title01_out.png" /></span>
+       <span class="title_on"><a href="#"><img src="img/cont_title_on.png" /></a></span> -->
+       <!-- <span class="layer"></span> -->
+     </div>
+     <div class="cont">
+       <span class="bg"><img src="lock2.jpg" width="700px" height="auto" /></span>
+       <!-- <span class="title_off"><img src="img/cont_title01_out.png" /></span>
+        <span class="title_on"><a href="#"><img src="img/cont_title_on.png" /></a></span> -->
+        <!-- <span class="layer"></span> -->
+      </div>
+      <div class="cont">
+        <span class="bg"><img src="lock3.jpg" width="413px" height="auto"/></span>
+        <!-- <span class="title_off"><img src="img/cont_title01_out.png" /></span>
+         <span class="title_on"><a href="#"><img src="img/cont_title_on.png" /></a></span> -->
+         <!-- <span class="layer"></span> -->
+       </div>
+       <div class="cont">
+         <span class="bg"><img src="lock4.jpg" width="700px" height="auto"/></span>
+         <!-- <span class="title_off"><img src="img/cont_title01_out.png" /></span>
+          <span class="title_on"><a href="#"><img src="img/cont_title_on.png" /></a></span>
+          <span class="layer"></span> -->
+        </div>
+        <div class="cont">
+          <span class="bg"><img src="lock5.jpg" width="600px" height="auto"/></span>
+          <!-- <span class="title_off"><img src="img/cont_title01_out.png" /></span>
+           <span class="title_on"><a href="#"><img src="img/cont_title_on.png" /></a></span>
+           <span class="layer"></span> -->
+         </div>
+       </div>
+     </div>
+
+
+
+<div class="third">
+<p>지금부터 각각의 자물쇠를 해제하는 방법을 설명 드리겠습니다.<br/>
+이 게임에는 2가지 글자 자물쇠와 2가지 숫자 자물쇠가 존재합니다.<br/>
+</p>
+<center>
+<table>
+  <tr>
+    <td><img alt="lock6" src="lock6.png" style="max-width:100%"/></td><td><img alt="lock7" src="lock7.png" style="max-width:100%"/></td>
+  <tr>
+</table>
+</center>
+<p>
+1. 이 자물쇠에서 다이아몬드를 누르거나 문자가 적혀있는 패널을 드래그하면 다음/이전 문자로 넘어가집니다.<br/>
+2. 상단에 적혀있는 LOCKED라는 글자는 비밀번호가 해제되면 기억해야하는 숫자로 바뀝니다.<br/>
+최종 자물쇠에 사용될 암호를 위해서 이 숫자들을 꼭 기억해주세요.<br/></p>
+</div>
+<center>
+<div class="l3" style="max-width:50%">
+<img src="lock3.jpg" class="lo3"/>
+</div>
+</center>
+<div class="fourth">
+<p>
+이 자물쇠는 패턴 자물쇠입니다.<br/>
+힌트를 통해 패턴 모양이 어떨지 예측한 뒤 휴대폰 잠금을 해제하듯이 해제해주세요.<br/>
+잠금이 해제되면 역시 기억해야 할 숫자가 등장합니다.<br/>
+</p>
+</div>
+</body>
+<script>
+$(function() {
+  $(".section .cont").mouseover(function() {
+    $(".section .cont").stop().animate({width:"153px"}, 900, 'easeOutCirc').removeClass("on");
+    $(this).stop().animate({width:"413px"}, 900, 'easeOutCirc').addClass("on");
+  });
+});
+
+</script>
+</html>
