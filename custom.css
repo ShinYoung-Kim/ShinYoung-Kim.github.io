@@ -45,13 +45,43 @@ border-radius: 20px;padding:2px;border:solid 1px #96B7BB;margin-left:5px;}
 .desc .tele .call_info{color:black;float:left;margin-left:3px;margin-left:10px;}
 .desc .ellipsis .address_pic{width:15px;height:auto;float:left;margin-top:5px;margin-left:10px;}
 .desc .ellipsis .address{float:left;text-align: left;margin-left:2px;color:black;margin-top:3px;font-weight: bold;font-size:14px;}
-.desc .ellipsis .address_info{width:85px;float:left;text-align: left;margin-left:2px;font-size:3px;overflow: visible;white-space: normal;
-  color:black;margin-bottom:3px;margin-left:10px;}
+.desc .ellipsis .address_info{width:137px;float:left;text-align: left;margin-left:5px;font-size:3px;overflow: visible;white-space: normal;
+  color:black;padding-left: 2px;}
+.desc .ellipsis, .desc .tele{
+  margin-top:38px;
+}
+
 /* .desc .jibun {font-size: 11px;color: #888;margin-top: -2px;} */
-.info .img {position: absolute;top:20px;left:106.5px;text-align: center;width: 73px;height: 71px;color: #888;overflow:visible;white-space: normal;background-color:white;}
+.info .img {position: absolute;top:20px;left:84px;text-align: center;width: 120px;height: 120px;color: #888;overflow:visible;white-space: normal;background-color:white;}
 .storeimg{
+  width: 120px;height: 120px;
   border-radius: 70%;
   border: 1px solid #96B7BB;
+}
+.menu{
+  font-weight: bold;
+  font-size:12pt;
+  color:black;
+}
+hr{
+  margin-left:5px;
+  margin-right:5px;
+  background-color:#96B7BB;
+}
+.sell{
+  height:118px;
+  margin-top:80pt;
+  margin-left:5px;
+  margin-right:5px;
+  text-align: center;
+  color:#615f5f;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  display:-webkit-box;
+  word-wrap:break-word;
+  -webkit-line-clamp:6;
+  -webkit-box-orient:vertical;
 }
 /* .info:after {content: '';position: absolute;margin-left: -12px;left: 50%;bottom: 0;width: 22px;height: 12px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')} */
 .info .link {color: #5085BB;}
