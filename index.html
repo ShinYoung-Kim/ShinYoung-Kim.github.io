@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>지도</title>
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic,700italic'>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=0ee81a8e392bea1b929fc44adb05984d"></script>
+</head>
+<body>
+  <div class="main_menu_map" display="table">
+    <img id="logo2" src="https://i.ibb.co/pWSYRpj/image.png" alt="logo">
+    <ul class="header-top">
+      <li class="header"><span><a href="main.html" class="a">에코핏 소개</a></span></li>
+      <li class="header"><span><a href="introduction.html" class="a">용어 정리</a></span></li>
+      <li class="header"><span><a href="map.html" class="a">지도</a></span></li>
+      <li class="header"><span><a href="news.html" class="a">카드 뉴스</a></span></li>
+      <li class="header"><span><a href="desk.html" class="a">고객 센터</a></span></li>
+    </ul>
+  </div>
+  <div id="contain" style="width:28vw;height:98vh;margin:0;position:absolute;left:0;">
+
+    <div class="left-right">
+    <h2 style="color:#3A3E4A;text-align:left;margin-bottom:1vh;margin-top:1vh;">지역을 선택해주세요</h2>
+    <!--수정한곳-->
+    <form>
+      <div class="selectBox">
+    <select name="region" onchange="panTo(this.value)" style="color:white;" class="select">
+      <option value="Nowon">노원구</option>
+      <option value="Gangnam">강남구</option>
+      <option value="Seocho">서초구</option>
+      <option value="Mapo">마포구</option>
+      <option value="Yongsan">용산구</option>
+    </select>
+    <span class="icoArrow" style="border-left: 2px solid #white;"><img src="https://freepikpsd.com/media/2019/10/down-arrow-icon-png-7-Transparent-Images.png" alt=""></span>
+  </div>
+    </form>
+
+    <!--여기까지-->
+    <div class="tag_group">
+    <h2>친환경식당</h2>
+      <ul class="tags">
+        <li><a href="#" onclick="changeMarker('restaurant');" class="tag" id="food">베지테리언</a></li>
+        <li><a href="#" onclick="findTag('락토')" class="tag" id="food">락토</a></li>
+        <li><a href="#" onclick="findTag('오보')" class="tag" id="food">오보</a></li>
+        <li><a href="#" onclick="findTag('락토오보')" class="tag" id="food">락토오보</a></li>
+        <li><a href="#" onclick="findTag('페스코')" class="tag" id="food">페스코</a></li>
+        <li><a href="#" onclick="findTag('폴로')" class="tag" id="food">폴로</a></li>
+      </ul>
+    </div>
+    <div class="tag_group">
+      <h2>업사이클링</h2>
+      <ul class="tags">
+        <li><a href="#" onclick="changeMarker('upcycling')" class="tag" id="up">업사이클링</a></li>
+        <li><a href="#" onclick="findTag('의류')"class="tag" id="up">의류</a></li>
+        <li><a href="#" onclick="findTag('가방')"class="tag" id="up">가방</a></li>
+        <li><a href="#" onclick="findTag('생활용품')"class="tag" id="up">생활용품</a></li>
+      </ul>
+    </div>
+    <div class="tag_group">
+      <h2>비건뷰티</h2>
+      <ul class="tags">
+        <li><a href="#" onclick="changeMarker('veganBeauty')" class="tag" id="beauty">비건뷰티</a></li>
+        <li><a href="#" onclick="findTag('화장품')" class="tag" id="beauty">화장품</a></li>
+        <li><a href="#" onclick="findTag('향수')" class="tag" id="beauty">향수</a></li>
+      </ul>
+    </div>
+    <div class="tag_group">
+      <h2>제로웨이스트</h2>
+      <ul class="tags">
+        <li><a href="#" onclick="changeMarker('zeroWaste')" class="tag" id="zero">제로웨이스트</a></li>
+      </ul>
+    </div>
+  </div>
+    <script>
+    function toggleImg1() {
+      document.getElementById("introduction_line").src = "introduction.png";
+    }
+    function toggleImg2() {
+      document.getElementById("term_line").src = "term.png";
+    }
+    function toggleImg3() {
+      document.getElementById("news_line").src = "news.png";
+    }
+    function toggleImg4() {
+      document.getElementById("client_line").src = "client.png";
+    }
+    function toggleoutImg1() {
+      document.getElementById("introduction_line").src = "introduction_line.png";
+    }
+    function toggleoutImg2() {
+      document.getElementById("term_line").src = "term_line.png";
+    }
+    function toggleoutImg3() {
+      document.getElementById("news_line").src = "news_line.png";
+    }
+    function toggleoutImg4() {
+      document.getElementById("client_line").src = "client_line.png";
+    }
+    </script>
+
+</div>
+<!-- 지도를 표시할 div 입니다 -->
+<div id="map" style="width:76vw;height:89vh;margin-top:1vh;margin-bottom:1vh;margin-left:1vw;margin-right:1vh;position:absolute;right:0;bottom:0;border-radius:20px;"></div>
+
+
+
+
+
+<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+<!-- ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ -->
+<script src="func.js"></script>
+</body>
+</html>
