@@ -48,7 +48,11 @@ border-radius: 20px;padding:2px;border:solid 1px #96B7BB;margin-left:5px;}
 .desc .ellipsis .address_info{width:85px;float:left;text-align: left;margin-left:2px;font-size:3px;overflow: visible;white-space: normal;
   color:black;margin-bottom:3px;margin-left:10px;}
 /* .desc .jibun {font-size: 11px;color: #888;margin-top: -2px;} */
-.info .img {position: absolute;top:20px;left:106.5px;text-align: center;width: 73px;height: 71px;border: 1px solid #96B7BB;color: #888;overflow:visible;white-space: normal;border-radius:70%;background-color:white;}
+.info .img {position: absolute;top:20px;left:106.5px;text-align: center;width: 73px;height: 71px;color: #888;overflow:visible;white-space: normal;background-color:white;}
+.storeimg{
+  border-radius: 70%;
+  border: 1px solid #96B7BB;
+}
 /* .info:after {content: '';position: absolute;margin-left: -12px;left: 50%;bottom: 0;width: 22px;height: 12px;background: url('https://t1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')} */
 .info .link {color: #5085BB;}
 .tags {
