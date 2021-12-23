@@ -18,7 +18,7 @@
 }
 .wrap {position: absolute;left: 0;bottom: 40px;width: 288px;height: auto;margin-left: -144px;text-align: left;overflow: hidden;
   box-shadow: 1px 2px 1px 0 rgba(136,148,171,.5),0 24px 20px -24px rgba(71,82,107,.1);
-  font-size: 12px;font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;line-height: 1.5;margin-bottom:40pt;}
+  font-size: 12px;font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;line-height: 1.5;margin-bottom:27pt;}
 .wrap * {padding: 0;margin: 0;}
 .wrap .info {width: 288px;height: auto;border-radius: 10px;border-bottom: 2px solid #ccc;border-right: 1px solid #ccc;overflow: hidden;
   background-color:white;padding-right:8px;
@@ -349,4 +349,5 @@ h2{
 #zero{
   font-family: 'ONE-Mobile-Regular';
 }
+
 
