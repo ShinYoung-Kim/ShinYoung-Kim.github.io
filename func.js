@@ -685,7 +685,7 @@ tag1 : '베지테리언'
 },
 {
 name: '샐러디 (강남역)',
-img: '',
+img: 'https://search.pstatic.net/common/?src=http%3A%2F%2Fblogfiles.naver.net%2FMjAyMTA3MjhfMTQ0%2FMDAxNjI3NDc5OTI3NTMw.XPhStLIL7xqWfyeZTDh50OCtqkdPdxNB3axl6zhnk9Qg.-TjizK2qEAK6NzpbqueLRWNYmJy14ljU9YrbX4wpwXYg.PNG.realestateconsulting%2FScreen_Shot_2021-07-28_at_10.31.35_PM.png&type=sc960_832',
 addr: '서울 강남구 강남대로84길 23',
 tele: '02-557-6738',
 latlng: new kakao.maps.LatLng(37.4971579, 127.0304145),
@@ -1161,8 +1161,9 @@ function createContent(data, overlay) {
 
   var img = document.createElement('img');
   img.src = data.img;
-  img.width = "73";
+  img.width = "70";
   img.height = "70";
+  img.className="storeimg"
   imgDiv.appendChild(img);
 
   var desc = document.createElement('div');
