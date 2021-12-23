@@ -4,6 +4,18 @@
      font-weight: normal;
      font-style: normal;
 }
+@font-face {
+    font-family: 'ONE-Mobile-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2105_2@1.0/ONE-Mobile-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
 .wrap {position: absolute;left: 0;bottom: 40px;width: 288px;height: auto;margin-left: -144px;text-align: left;overflow: hidden;
   box-shadow: 1px 2px 1px 0 rgba(136,148,171,.5),0 24px 20px -24px rgba(71,82,107,.1);
   font-size: 12px;font-family: 'Malgun Gothic', dotum, '돋움', sans-serif;line-height: 1.5;}
@@ -221,6 +233,7 @@ h2{
   color:#3A3E4A;
   text-align: center;
   font-size:10pt;
+  font-family: 'GmarketSansBold';
 }
 .tag_group{
   width:100%;
@@ -319,4 +332,16 @@ h2{
 .a:visited {
   color: black;
   text-decoration: none;
+}
+#food{
+  font-family: 'ONE-Mobile-Regular';
+}
+#up{
+  font-family: 'ONE-Mobile-Regular';
+}
+#beauty{
+  font-family: 'ONE-Mobile-Regular';
+}
+#zero{
+  font-family: 'ONE-Mobile-Regular';
 }
