@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>카드뉴스</title>
+  <link type="text/css" rel="stylesheet" href="design.css">
+  <style>
+    .content{
+      font-family: 'GmarketSansBold';
+      text-align: center;
+      font-size: 18pt;
+      padding-top: 9vh;
+    }
+    #title{
+      color: #7ea869;
+    }
+    .news_title{
+      font-family: 'GmarketSansBold';
+    }
+    #news1, #news2, #news3{
+      background-color: white;
+      display: inline-block;
+      font-family: 'ONE-Mobile-Regular';
+      width: 270px;
+      height: 390px;
+      text-align: center;
+      margin: 0 4vw 10vw 4vw;
+      padding: 10px;
+    }
+    #news1 > img, #news2 > img, #news3 > img{
+      width: 270px;
+      height: 270px;
+      float: left;
+    }
+  </style>
+<body>
+  <div class="main_menu">
+    <img id="logo1" src="img/logo.png" alt="logo">
+    <ul>
+      <li><span><a href="main.html">에코핏 소개</a></span></li>
+      <li><span><a href="introduction.html">용어 정리</a></span></li>
+      <li><span><a href="map.html">지도</a></span></li>
+      <li><span><a href="news.html">카드 뉴스</a></span></li>
+      <li><span><a href="desk.html">고객 센터</a></span></li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="content">
+      <h1 id="title" style="font-size: 40pt;">카드로 보는 환경 뉴스</h1>
+      <a href="card1.html" target="_self"><div id="news1">
+        <img src="card1/1.png" alt="">
+        <h2 class="news_title">COP26</h2>
+        <p>글래스고 기후 조약</p>
+      </div></a>
+      <a href="card2.html" target="_self"><div id="news2">
+        <img src="card2/1.png" alt="">
+        <h2 class="news_title">에디터 PICK!</h2>
+        <p>비건 지향 식당 방문기</p>
+      </div></a>
+      <a href="card3.html" target="_self"><div id="news3">
+        <img src="card3/1.png" alt="">
+        <h2 class="news_title">그린 라이프 쇼</h2>
+        <p>2021 Green Life Show</p>
+      </div></a>
+    </div>
+  </div>
+  <footer>
+    <div class="last">
+      <img id="logo2" src="img/logo.jpg" alt="logo">
+      <div class="contact_us">
+        3C | 주소 : 서울특별시 노원구 공릉로 232<br>
+        전화번호 : 02-970-6114<br>
+        이메일 : sonemelody@seoultech.ac.kr<br>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
