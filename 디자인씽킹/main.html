@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>당신이 찾던 에코, 에코핏</title>
+  <link type="text/css" rel="stylesheet" href="design.css">
+  <style>
+    #main_img{
+      margin-top: 9vh;
+      width: 100%;
+    }
+
+    .part1{
+      margin-bottom: 10%;
+      display: inline;
+    }
+    #main_map{
+      width: 90vh;
+      height:auto;
+      float: left;
+      margin-top: 15%;
+      margin-left: 10%;
+    }
+    .text1{
+      float:right;
+      margin-top: 10%;
+      margin-right: 10%;
+    }
+    .text1_title{
+      font-family: 'GmarketSansBold';
+      color: #7ea869;
+      font-size: 60px;
+    }
+    .part2{
+      text-align: center;
+      margin-top: 20%;
+      margin-bottom: 10%;
+    }
+    .text2_title{
+      font-family: 'GmarketSansBold';
+      color: #7ea869;
+      font-size: 30pt;
+    }
+    .text2{
+      font-size: 25px;
+      text-align: center;
+    }
+    #vegetable, #animal, #waste, #upcycling{
+      background-color: #cfe5ce;
+      border-radius: 20px;
+      width: 250px;
+      height: 370px;
+      display: inline-block;
+      text-align: center;
+      margin: 2%;
+    }
+    #vegetable > img, #animal > img, #waste > img, #upcycling > img{
+      width: 180px;
+      height: 180px;
+      border-radius: 50%;
+      margin-top: 12%;
+      margin-bottom: 20%;
+    }
+    .part3{
+      margin-top: 20%;
+      padding-bottom: 10%;
+      overflow: auto;
+      text-align: center;
+    }
+    .text3_title{
+      font-family: 'GmarketSansBold';
+      text-align: center;
+      color: #7ea869;
+      font-size: 30pt;
+    }
+    .text3{
+      position: relative;
+      float: left;
+      margin-left: 12%;
+      height: 100%;
+    }
+    .text3_content{
+      width: 100%;
+      text-align: right;
+      border-right: 2px green solid;
+      padding-right: 10%;
+      padding-top: 7%;
+      padding-bottom: 7%;
+      font-size: 15pt;
+    }
+    #fitfeet{
+      width: 370px;
+      height: 290px;
+    }
+    .text3_content, #fitfeet{
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+  <div class="main_menu">
+    <img id="logo1" src="img/logo.png" alt="logo">
+    <ul>
+      <li><span><a href="main.html">에코핏 소개</a></span></li>
+      <li><span><a href="introduction.html">용어 정리</a></span></li>
+      <li><span><a href="map.html">지도</a></span></li>
+      <li><span><a href="news.html">카드 뉴스</a></span></li>
+      <li><span><a href="desk.html">고객 센터</a></span></li>
+    </ul>
+  </div>
+  <div class="container">
+    <div class="part1">
+      <img src="img/main_leaf.jpg" id="main_img">
+      <div style="clear:both;"></div>
+      <img src="img/map.jpg" alt="" id="main_map">
+      <div class="text1">
+        <h1 class="text1_title">집 근처에서<br>지구 지키기</h1>
+        <h1 style="color: darkgray;">Finding Eco Nearby You</h1> <br>
+        <p style="font-size: 20px;">당신을 위한 내집 근처 에코 찾기 서비스 <br><br>
+          이젠 힘들게 검색하지 마세요! <br><br>
+          에코핏이 대신 찾아 드릴게요
+        </p>
+      </div>
+    </div>
+    <div style="clear:both;"></div>
+    <div class="part2">
+      <p class="text2_title">태그를 이용한 간편 검색!</p>
+      <div class="text2">
+        <div id="vegetable">
+          <img src="img/vegan.jpg" alt="">
+          <br><strong>베지테리언</strong>을<br>위한 식당
+        </div>
+        <div id="upcycling">
+          <img src="img/upcycle.jpg" alt="">
+          <br><strong>업사이클링</strong>으로<br>만든 제품
+        </div>
+        <div id="animal">
+          <img src="img/animal.jpg" alt="">
+          <br><strong>동물 실험</strong>을<br><strong>지양</strong>하는 화장품
+        </div>
+        <div id="waste">
+          <img src="img/zerowaste.jpg" alt="">
+          <br><strong>제로 웨이스트</strong>를<br>실천하는 가게
+        </div>
+      </div>
+    </div>
+    <div style="clear:both;"></div>
+    <div class="part3">
+      <br><h3 class="text3_title">더는 지구에게 미안하기 싫은 사람들을 위한 곳</h3> <br><br>
+      <div class="text3">
+        <p class="text3_content">‘에코핏’은 당신에게 적합한(fit) 에코 정보와 <br><br>
+          환경을 위한 작은 발자국(feet)을 담으려 합니다. <br><br>
+          입문자를 위한 친절한 용어 정리부터, <br><br>
+          정보를 한 눈에 볼 수 있는 지도와 환경 뉴스까지 <br><br>
+          여러분의 착한 생각을 도울 수 있도록 노력하겠습니다.
+        </p>
+      </div>
+      <img id="fitfeet" src="img/fitfeet.jpg" alt="">
+    </div>
+  </div>
+  <div style="clear:both;"></div>
+  <footer>
+    <div class="last">
+      <img id="logo2" src="img/logo.jpg" alt="logo">
+      <div class="contact_us">
+        3C | 주소 : 서울특별시 노원구 공릉로 232<br>
+        전화번호 : 02-970-6114<br>
+        이메일 : sonemelody@seoultech.ac.kr<br>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
