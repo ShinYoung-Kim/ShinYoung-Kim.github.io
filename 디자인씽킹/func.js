@@ -1196,7 +1196,7 @@ var zeroWaste = [
   }
 ];
 
-var markerImageSrc = 'https://i.ibb.co/3FdHMJR/image.png';
+var markerImageSrc = 'img/marker.png';
 var restaurantMarkers = [],
     upcyclingMarkers = [],
     veganBeautyMarkers = [],
@@ -1256,7 +1256,7 @@ function createContent(type, data, overlay) {
   body.appendChild(imgDiv);
 
   var img = document.createElement('img');
-  img.src = data.img;
+  img.src = "img/store.jpg";
   img.width = "70";
   img.height = "70";
   img.className="storeimg"
@@ -1267,12 +1267,12 @@ function createContent(type, data, overlay) {
   body.appendChild(desc);
 
   var ellipsis = document.createElement('div');
-  ellipsis.innerHTML = '<img class="address_pic" src="https://i.ibb.co/PgyKQRn/image.png"><div class="address">주소</div><div class="address_info">'+data.addr+'</div>';
+  ellipsis.innerHTML = '<img class="address_pic" src="loca.png"><div class="address">주소</div><div class="address_info">'+data.addr+'</div>';
   ellipsis.className = "ellipsis";
   desc.appendChild(ellipsis);
 
   var tele = document.createElement('div');
-  tele.innerHTML = '<img class="call_pic" src="https://i.ibb.co/QNDYgjW/image.png"><div class="call">연락처</div><div class="call_info">' + data.tele+'</div><div class="clear"></div>';
+  tele.innerHTML = '<img class="call_pic" src="call.png"><div class="call">연락처</div><div class="call_info">' + data.tele+'</div><div class="clear"></div>';
   tele.className = "tele";
   desc.appendChild(tele);
 //추가
