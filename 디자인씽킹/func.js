@@ -1256,7 +1256,7 @@ function createContent(type, data, overlay) {
   body.appendChild(imgDiv);
 
   var img = document.createElement('img');
-  img.src = "img/store.jpg";
+  img.src = data.img;
   img.width = "70";
   img.height = "70";
   img.className="storeimg"
