@@ -1267,12 +1267,12 @@ function createContent(type, data, overlay) {
   body.appendChild(desc);
 
   var ellipsis = document.createElement('div');
-  ellipsis.innerHTML = '<img class="address_pic" src="loca.png"><div class="address">주소</div><div class="address_info">'+data.addr+'</div>';
+  ellipsis.innerHTML = '<img class="address_pic" src="img/loca.png"><div class="address">주소</div><div class="address_info">'+data.addr+'</div>';
   ellipsis.className = "ellipsis";
   desc.appendChild(ellipsis);
 
   var tele = document.createElement('div');
-  tele.innerHTML = '<img class="call_pic" src="call.png"><div class="call">연락처</div><div class="call_info">' + data.tele+'</div><div class="clear"></div>';
+  tele.innerHTML = '<img class="call_pic" src="img/call.png"><div class="call">연락처</div><div class="call_info">' + data.tele+'</div><div class="clear"></div>';
   tele.className = "tele";
   desc.appendChild(tele);
 //추가
